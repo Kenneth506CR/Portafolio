@@ -1,7 +1,7 @@
 // animaciones.js
 const phrases = [
     ["I'm ", "Kenneth", " Rodríguez"],
-    ["i'm ", "Programer", " Front End"]
+    ["i'm ", "Front End", " Programer."]
   ];
   const colors = ["blue", "red", "white"];
   const interval = 250;
