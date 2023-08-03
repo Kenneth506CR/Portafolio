@@ -156,7 +156,7 @@ body {
   justify-content: space-around;
   flex-wrap: wrap;
   padding-bottom: 5rem;
-  gap: 28px;
+  gap: 20px;
 }
 
 .card__skills {
@@ -373,23 +373,23 @@ body {
   opacity: 0;
 }
 
-.projects__container{
+.projects__container {
   background: #00ff55;
   padding-bottom: 4rem;
 }
 
-.titulo__collage{
+.titulo__collage {
   font-weight: bold;
   font-size: 1.2rem;
   margin: 1rem;
   color: #ffffff;
 }
 
-.texto__collage{
+.texto__collage {
   color: #ffffff;
 }
 
-.projects__container .titulo__principal{
+.projects__container .titulo__principal {
   text-align: center;
   font-size: 1.8rem;
   font-weight: bold;
@@ -397,7 +397,7 @@ body {
   padding-bottom: 6rem;
 }
 
-.collage__projects{
+.collage__projects {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   margin-left: 8rem;
@@ -405,10 +405,10 @@ body {
   gap: 1rem;
 }
 
-.project{
+.project {
   padding: 1rem;
   margin-bottom: 1rem;
-  text-align: center; 
+  text-align: center;
   background: #000000;
   border-radius: 10px;
   box-shadow: 0 0 60px -5px black;
@@ -423,12 +423,11 @@ body {
   border: white 3px solid;
 }
 
-
 .img__collage {
   max-height: 300px;
 }
 
-.button__view{
+.button__view {
   margin-top: 1rem;
   background-color: #ffffff00;
   color: #fff;
@@ -444,7 +443,7 @@ body {
 
 .button__view:hover {
   background-color: #ffffff;
-  color: #000
+  color: #000;
 }
 
 .button__view img {
@@ -460,7 +459,7 @@ body {
 }
 
 .text__view {
-  margin: 0 1.5em
+  margin: 0 1.5em;
 }
 
 .collage__projects .project:hover {
@@ -474,25 +473,25 @@ body {
 
 /* Formulario */
 
-.form__container{
+.form__container {
   background: #000000;
   padding-bottom: 6rem;
 }
 
-.flex__form{
-  display: flex; 
+.flex__form {
+  display: flex;
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
 }
 
-.form__container img{
-  width:450px;
+.form__container img {
+  width: 450px;
   height: auto;
   align-items: center;
 }
 
-.titulo__form{
+.titulo__form {
   font-weight: bold;
   font-size: 1.8rem;
   text-align: center;
@@ -536,7 +535,7 @@ input[type="submit"] {
   border-radius: 4px;
   cursor: pointer;
   width: 10rem;
-  height:auto;
+  height: auto;
 }
 
 input[type="submit"]:hover {
@@ -545,11 +544,11 @@ input[type="submit"]:hover {
 
 /* Footer */
 
-.footer__container{
+.footer__container {
   background: red;
 }
 
-.footer__container h1{
+.footer__container h1 {
   text-align: center;
   font-weight: bold;
   color: white;
@@ -564,7 +563,7 @@ input[type="submit"]:hover {
   gap: 15px;
 }
 
-.containerFour{
+.containerFour {
   margin-right: 1rem;
 }
 
@@ -578,32 +577,32 @@ input[type="submit"]:hover {
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  transition-duration: .3s;
+  transition-duration: 0.3s;
 }
 /* instagram*/
 .containerOne:hover {
   background-color: #c52828;
-  transition-duration: .3s;
+  transition-duration: 0.3s;
 }
 /* twitter*/
 .containerTwo:hover {
   background-color: #00acee;
-  transition-duration: .3s;
+  transition-duration: 0.3s;
 }
 /* linkdin*/
 .containerThree:hover {
   background-color: #0072b1;
-  transition-duration: .3s;
+  transition-duration: 0.3s;
 }
 /* Whatsapp*/
 .containerFour:hover {
   background-color: #16c510;
-  transition-duration: .3s;
+  transition-duration: 0.3s;
 }
 
 .socialContainer:active {
   transform: scale(0.9);
-  transition-duration: .3s;
+  transition-duration: 0.3s;
 }
 
 .socialSvg {
