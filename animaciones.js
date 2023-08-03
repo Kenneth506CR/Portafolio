@@ -48,4 +48,5 @@ const phrases = [
     const consoleElement = document.querySelector(".nombre__header");
     showNextPhrase(consoleElement);
   });
+
   

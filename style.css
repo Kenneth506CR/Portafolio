@@ -372,7 +372,7 @@ body {
 
 .projects__container{
   background: #00ff55;
-  padding-bottom: 2rem;
+  padding-bottom: 4rem;
 }
 
 .titulo__collage{
@@ -397,26 +397,27 @@ body {
 .collage__projects{
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-gap: 5px;
-  margin-left: 1rem;
-  margin-right: 1rem;
+  margin-left: 8rem;
+  margin-right: 8rem;
+  gap: 1rem;
 }
 
 .project{
   padding: 1rem;
-  margin-left: 4rem;
-  margin-right: 4rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   text-align: center; 
-  background: #7e7e7e;
-  border-radius: 1.5%;
+  background: #000000;
+  border-radius: 10px;
+  box-shadow: 0 0 60px -5px black;
   transition: 400ms;
+  border: white 8px double;
 }
 
-.projects__container img {
+.projects__container .img__collage {
   max-width: 100%;
   height: auto;
-  border-radius: 5%;
+  border-radius: 3%;
+  border: white 3px solid;
 }
 
 
@@ -430,10 +431,12 @@ body {
   color: #fff;
   width: 8.5em;
   height: 2.9em;
-  border: #ffffff 0.2em solid;
+  border: #e7eb2c 0.2em solid;
   border-radius: 11px;
   text-align: right;
   transition: all 0.6s ease;
+  cursor: pointer;
+  font-weight: bold;
 }
 
 .button__view:hover {
@@ -464,4 +467,64 @@ body {
 .collage__projects:hover > .project:not(:hover) {
   filter: blur(2rem);
   transform: scale(0.9, 0.9);
+}
+
+/* Formulario */
+
+.form__container{
+  background: #000000;
+}
+
+.form {
+  background: #1e1544;
+}
+
+.titulo__form{
+  font-weight: bold;
+  font-size: 1.8rem;
+  text-align: center;
+  padding-top: 4rem;
+  padding-bottom: 6rem;
+  color: white;
+}
+
+form {
+  width: 500px;
+  margin: 0 auto;
+  text-align: left;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 12px 20px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+input[type="submit"] {
+  background-color: #4caf50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
 }
