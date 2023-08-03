@@ -110,30 +110,33 @@ body {
 }
 
 .container__aboutMe {
-  background: #30c3dd;
-  display: flex;
+  background-image: url(/assets/never-stop-learning-g01e844523_1920.jpg);
+  background-size: 100%;
+  width: auto;
+  height: auto;
 }
 
 .about__titulo {
-  margin: 4rem;
-  margin-top: 4rem;
+  padding: 4rem;
+  padding-top: 4rem;
   font-size: 1.8rem;
   font-weight: bold;
-  margin-bottom: 2rem;
+  padding-bottom: 2rem;
+  text-align: center;
 }
 
 .about__parrafo1 {
   font-size: 1.4rem;
-  margin-left: 4rem;
-  margin-right: 45rem;
-  margin-bottom: 3rem;
+  padding-left: 4rem;
+  padding-right: 45rem;
+  padding-bottom: 3rem;
 }
 
 .about__parrafo2 {
   font-size: 1.4rem;
-  margin-left: 4rem;
-  margin-right: 45rem;
-  margin-bottom: 6rem;
+  padding-left: 4rem;
+  padding-right: 45rem;
+  padding-bottom: 6rem;
 }
 
 .skills {
@@ -473,10 +476,20 @@ body {
 
 .form__container{
   background: #000000;
+  padding-bottom: 6rem;
 }
 
-.form {
-  background: #1e1544;
+.flex__form{
+  display: flex; 
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.form__container img{
+  width:450px;
+  height: auto;
+  align-items: center;
 }
 
 .titulo__form{
@@ -489,6 +502,7 @@ body {
 }
 
 form {
+  background: #1e1544;
   width: 500px;
   margin: 0 auto;
   text-align: left;
@@ -499,7 +513,6 @@ form {
 
 label {
   display: block;
-  margin-bottom: 10px;
   font-size: 18px;
   font-weight: bold;
   color: white;
@@ -519,12 +532,100 @@ textarea {
 input[type="submit"] {
   background-color: #4caf50;
   color: white;
-  padding: 12px 20px;
   border: none;
   border-radius: 4px;
   cursor: pointer;
+  width: 10rem;
+  height:auto;
 }
 
 input[type="submit"]:hover {
   background-color: #45a049;
+}
+
+/* Footer */
+
+.footer__container{
+  background: red;
+}
+
+.footer__container h1{
+  text-align: center;
+  font-weight: bold;
+  color: white;
+  padding-top: 2rem;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  padding-bottom: 2rem;
+  gap: 15px;
+}
+
+.containerFour{
+  margin-right: 1rem;
+}
+
+/* for all social containers*/
+.socialContainer {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background-color: rgb(44, 44, 44);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  transition-duration: .3s;
+}
+/* instagram*/
+.containerOne:hover {
+  background-color: #c52828;
+  transition-duration: .3s;
+}
+/* twitter*/
+.containerTwo:hover {
+  background-color: #00acee;
+  transition-duration: .3s;
+}
+/* linkdin*/
+.containerThree:hover {
+  background-color: #0072b1;
+  transition-duration: .3s;
+}
+/* Whatsapp*/
+.containerFour:hover {
+  background-color: #16c510;
+  transition-duration: .3s;
+}
+
+.socialContainer:active {
+  transform: scale(0.9);
+  transition-duration: .3s;
+}
+
+.socialSvg {
+  width: 17px;
+}
+
+.socialSvg path {
+  fill: rgb(255, 255, 255);
+}
+
+.socialContainer:hover .socialSvg {
+  animation: slide-in-top 0.3s both;
+}
+
+@keyframes slide-in-top {
+  0% {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
