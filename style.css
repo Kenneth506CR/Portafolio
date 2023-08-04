@@ -25,7 +25,7 @@ body {
 }
 
 .header__container {
-  background: rgb(0, 0, 0);
+  background-image: url(/assets/espacio.gif);
   display: flex;
   justify-content: space-between;
 }
