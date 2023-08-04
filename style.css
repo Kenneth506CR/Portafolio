@@ -1,8 +1,17 @@
 body {
-  background: rgb(255, 255, 255);
+  background: radial-gradient(at 0% 30%, red 10px, yellow 30%, #1e90ff 50%);
 }
 
-/* style.css */
+.titulos {
+  font-size: 1.8rem;
+  font-weight: bold;
+  padding-top: 4rem;
+  padding-bottom: 3rem;
+  text-align: center;
+}
+
+/* Header */
+
 .blue {
   color: #b0fc00; /* Azul */
 }
@@ -15,133 +24,82 @@ body {
   color: #b0fc00; /* Blanco */
 }
 
-.contenedor__header {
+.header__container {
   background: rgb(0, 0, 0);
   display: flex;
   justify-content: space-between;
 }
 
-.nombre__header {
-  margin-top: 1.5rem;
-  margin-left: 1rem;
+.header__container h1 {
+  padding-top: 1.5rem;
+  padding-left: 1rem;
   font-size: 2.5rem;
-  color: antiquewhite;
+  color: white;
   font-weight: bold;
-  text-decoration: none;
 }
 
-.secciones__header {
+.header__section {
   display: flex;
   justify-content: space-around;
   text-align: center;
-  margin-right: 2rem;
+  padding-right: 2rem;
 }
 
 .link {
-  margin: 2rem;
+  padding: 2rem;
 }
 
 .link__titulo {
-  color: rgb(255, 255, 255);
+  color: white;
   font-size: 1.2rem;
   text-decoration: none;
   font-weight: bold;
 }
 
-.inicio {
-  background: #b0fc00;
-}
+/* Inicio */
 
-.sobreMi__titulo {
-  font-weight: bold;
-  font-size: 2.8rem;
-  margin-top: 6rem;
-}
+/* .about__container {
 
-.sobreMi__parrafo {
-  margin-top: 2rem;
-  font-size: 2rem;
-  margin-bottom: 4rem;
-}
+} */
 
-.sobreMi__ul {
+.about__content {
   display: flex;
   justify-content: space-around;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
+  align-items: start;
+  padding-bottom: 4rem;
+  flex-wrap: wrap-reverse;
 }
 
-.link__redes {
-  text-decoration: none;
-}
-
-.ul__sobreMi {
-  text-decoration: none;
-}
-
-.sobreMi__a {
-  text-decoration: none;
-  color: rgb(0, 0, 0);
-  font-weight: bold;
-  font-size: 1.2rem;
-}
-
-.todo__sobreMi {
-  display: flex;
-  justify-content: space-around;
+.about__content p {
+  font-size: 1.6rem;
   text-align: center;
-  margin-left: 2rem;
-  margin-right: 2rem;
+  white-space: pre-line;
+  background: rgb(0, 0, 0);
+  opacity: 0.8;
+  color: white;
+  border-radius: 2rem;
+  border: rgb(0, 0, 0) 30px solid;
 }
 
-.imagen__kenneth {
-  width: 70%;
+.about__content img {
+  width: 30rem;
   border-radius: 50%;
 }
 
-.contenedor__imagen {
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-}
+/* About Me */
 
-.img__link {
-  width: 15px;
-  height: 15px;
-}
-
-.container__aboutMe {
+.background__container {
   background-image: url(/assets/never-stop-learning-g01e844523_1920.jpg);
   background-size: 100%;
-  width: auto;
-  height: auto;
+  width: 100%;
+  height: 610px;
 }
 
-.about__titulo {
-  padding: 4rem;
-  padding-top: 4rem;
-  font-size: 1.8rem;
-  font-weight: bold;
-  padding-bottom: 2rem;
-  text-align: center;
-}
+/* Skills */
 
-.about__parrafo1 {
-  font-size: 1.4rem;
-  padding-left: 4rem;
-  padding-right: 45rem;
-  padding-bottom: 3rem;
-}
-
-.about__parrafo2 {
-  font-size: 1.4rem;
-  padding-left: 4rem;
-  padding-right: 45rem;
-  padding-bottom: 6rem;
-}
-
-.skills {
+/* .skills {
   background: #ffffff;
-}
+} */
 
 .skills h1 {
   font-weight: bold;
@@ -218,9 +176,9 @@ body {
   width: 50%;
 }
 
-.hobbies {
+/* .hobbies {
   background: #b8b8b8;
-}
+} */
 
 .hobbies h1 {
   font-weight: bold;
@@ -268,9 +226,10 @@ body {
 .card__hobbies img {
   width: 70%;
 }
-.formacion {
+
+/* .formacion {
   background: #df0a3f;
-}
+} */
 
 .formacion h1 {
   font-size: 1.8rem;
@@ -374,7 +333,7 @@ body {
 }
 
 .projects__container {
-  background: #00ff55;
+  /*   background: #00ff55; */
   padding-bottom: 4rem;
 }
 
@@ -474,7 +433,7 @@ body {
 /* Formulario */
 
 .form__container {
-  background: #000000;
+  /*   background: #000000; */
   padding-bottom: 6rem;
 }
 
@@ -545,7 +504,7 @@ input[type="submit"]:hover {
 /* Footer */
 
 .footer__container {
-  background: red;
+  background: rgb(0, 0, 0);
 }
 
 .footer__container h1 {
