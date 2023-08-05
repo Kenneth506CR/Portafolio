@@ -1,5 +1,5 @@
 body {
-background: #74c1ee;
+  background: white;
 }
 
 .titulos {
@@ -8,27 +8,53 @@ background: #74c1ee;
   padding-top: 4rem;
   padding-bottom: 5rem;
   text-align: center;
-  color: white;
+  color: black;
 }
 
 /* Header */
-
-.blue {
-  color: #b0fc00; /* Azul */
-}
-
-.red {
-  color: #b0fc00; /* Rojo */
-}
-
-.white {
-  color: #b0fc00; /* Blanco */
-}
-
 .header__container {
-  background:#000;
+  background: #000;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+}
+
+.header__container img {
+  width: 80px;
+  height: auto;
+  margin-left: 1rem;
+}
+
+.nombre__tico .blue {
+  color: blue;
+}
+
+.header__container h1 {
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.header__container h1:hover {
+  color: blue;
+  transition: color 3s ease;
+  animation: changeColor 3s infinite;
+}
+
+@keyframes changeColor {
+  0% {
+    color: blue;
+  }
+  33.33% {
+    color: white;
+  }
+  66.66% {
+    color: red;
+  }
+  100% {
+    color: blue;
+  }
 }
 
 .header__section {
@@ -39,7 +65,7 @@ background: #74c1ee;
 }
 
 .link {
-  padding: 2rem;
+  padding: 1.3rem;
 }
 
 .link__titulo {
@@ -70,12 +96,9 @@ html {
 } */
 
 .about__container {
-  background:#0a0909;
   background-size: 100%;
-  width: 100%;
-  height: 700px;
+  background-image: url(/assets/UNA-Liberia-Guanacaste.jpg);
 }
-
 .about__content {
   display: flex;
   justify-content: space-around;
@@ -89,15 +112,27 @@ html {
   text-align: center;
   white-space: pre-line;
   background: rgb(255, 255, 255);
-  opacity: 0.7;
+  opacity: 0.9;
   color: rgb(0, 0, 0);
   border-radius: 2rem;
   border: rgb(255, 255, 255) 30px solid;
 }
 
+.about__content p:hover {
+  scale: 1.1;
+  transition: all 0.5s;
+  box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.705);
+}
+
 .about__content img {
-  width: 30rem;
+  width: 25rem;
   border-radius: 50%;
+  box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.705);
+}
+
+.about__content img:hover {
+  scale: 1.1;
+  transition: all 0.5s;
 }
 
 /* Skills */
@@ -174,8 +209,13 @@ html {
 }
 
 .hobbies {
-  background: #5f5f5f;
-} 
+  background: #00acee;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
 
 .all__hobbies {
   display: flex;
@@ -188,7 +228,7 @@ html {
 }
 
 .card__hobbies {
-  background: #b0fc00;
+  background: #f8f8f8;
   height: 100%;
   width: 100%;
   flex: 1;
@@ -199,7 +239,7 @@ html {
   justify-content: space-around;
   flex-direction: column;
   padding: 2rem;
-  border: rgb(0, 0, 0)4px solid;
+  border: rgb(0, 0, 0) 4px solid;
 }
 
 .card__hobbies:hover {
@@ -315,7 +355,6 @@ html {
 }
 
 .projects__container {
-  background: #363636;
   padding-bottom: 4rem;
 }
 
@@ -415,7 +454,7 @@ html {
 /* Formulario */
 
 .form__container {
-  /*   background: #000000; */
+  background: #00acee;
   padding-bottom: 6rem;
 }
 
@@ -486,7 +525,7 @@ input[type="submit"]:hover {
 /* Footer */
 
 .footer__container {
-  background:#000000;
+  background: #000000;
 }
 
 .footer__container h1 {
@@ -525,9 +564,9 @@ input[type="submit"]:hover {
   background-color: #c52828;
   transition-duration: 0.3s;
 }
-/* twitter*/
+/* github*/
 .containerTwo:hover {
-  background-color: #00acee;
+  background-color: #111111;
   transition-duration: 0.3s;
 }
 /* linkdin*/
