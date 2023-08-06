@@ -422,7 +422,7 @@ html {
 }
 
 .button__view:hover {
-  background-color: #ffffff;
+  background-color: #e6fc27;
   color: #000;
 }
 
@@ -439,7 +439,17 @@ html {
 }
 
 .text__view {
-  margin: 0 1.5em;
+  padding-right: 1rem;
+}
+
+.text__view a{
+  text-decoration: none;
+  color: white;
+  font-size: 1.1rem ;
+}
+
+.text__view a:hover{
+  color: #000000;
 }
 
 .collage__projects .project:hover {
