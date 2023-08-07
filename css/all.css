@@ -1,0 +1,12 @@
+body {
+    background: white;
+  }
+  
+  .titulos {
+    font-size: 1.8rem;
+    font-weight: bold;
+    padding-top: 4rem;
+    padding-bottom: 5rem;
+    text-align: center;
+    color: black;
+  }

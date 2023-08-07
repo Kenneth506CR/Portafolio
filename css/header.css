@@ -1,0 +1,153 @@
+/* Header */
+.header__container {
+  background: #000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 1rem;
+  padding-top: 0.5rem;
+}
+
+.header__container img {
+  width: 80px;
+  height: auto;
+  padding-left: 2rem;
+}
+
+.nombre__tico .blue {
+  color: blue;
+}
+
+.header__container h1 {
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.main__menu__iten:hover{
+  scale: 1.1;
+  transition: 0.4s;
+}
+
+.main__menu__link:hover{
+  color: chartreuse;
+}
+
+.header__container h1:hover {
+  color: blue;
+  transition: color 3s ease;
+  animation: changeColor 3s infinite;
+}
+
+@keyframes changeColor {
+  0% {
+    color: blue;
+  }
+  33.33% {
+    color: white;
+  }
+  66.66% {
+    color: red;
+  }
+  100% {
+    color: blue;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.toggle__menu img{
+  max-width: 100%;
+  filter: invert(100%);
+}
+
+.main__menu{
+  display: flex;
+  justify-content:space-evenly;
+  flex-direction: row;
+  align-items: center;
+  transition: transform 0.7s;
+  top: 80%; 
+  right: 1.5rem;
+}
+
+.main__menu__iten{
+  padding: 0.7rem;
+}
+
+.main__menu__link{
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  padding: 1rem;
+}
+
+.main__nav{
+  text-align: center;
+}
+
+.toggle__menu{
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+
+  .header__container {
+    position: relative;
+  }
+
+  .header__container h1{
+    display: none;
+  }
+
+  .toggle__menu{
+    display: block;
+    width: 40px;
+    position: absolute;
+    cursor: pointer;
+    top: 1rem;
+    right: 2rem;
+    z-index: 1;
+  }
+
+  .main__menu{
+    transform: translateY(-200%);
+  }
+
+  .main__menu__show{
+    transform: translateY(0);
+  }
+
+  .main__menu{
+    flex-direction: column;
+    background-color: aliceblue;
+    border-radius: 4%;
+    opacity: 0.8;
+    z-index: 1;
+    position: absolute; 
+  }
+
+  .main__menu__link{
+    color: #000;
+  }
+
+  .header__container img {
+    width: 60px;
+    height: auto;
+    margin-left: -1rem;
+  }
+
+  .main__menu__link:hover{
+    color: rgb(0, 0, 0);
+  }
+}
+
+@media screen and (max-width:1500px ) {
+
+  .header__container h1{
+    display: none;
+  }
+}

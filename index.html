@@ -3,8 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="reset.css" />
-    <link rel="stylesheet" href="style.css" />
+    <link href="/css/all.css" rel="stylesheet" />
+    <link href="/css/header.css" rel="stylesheet" />
+    <link href="/css/about.css" rel="stylesheet" />
+    <link href="/css/skills.css" rel="stylesheet" />
+    <link href="/css/hobbies.css" rel="stylesheet" />
+    <link href="/css/training.css" rel="stylesheet" />
+    <link href="/css/projects.css" rel="stylesheet" />
+    <link href="/css/contact.css" rel="stylesheet" />
+    <link href="/css/footer.css" rel="stylesheet" />
+    <link href="/css/reset.css" rel="stylesheet" />
     <title>Mi Portafolio</title>
   </head>
   <body>
@@ -12,41 +20,42 @@
       <div class="header__container">
         <img src="/assets/costa-rica_5344481.png" />
         <h1>Kenneth Rodríguez Carvajal | Front End</h1>
-        <nav class="menu">
-          <ul class="header__section">
-            <li class="link">
-              <a class="link__titulo" href="#page-ABOUT ME">ABOUT ME</a>
-            </li>
-            <li class="link">
-              <a class="link__titulo" href="#page-SKILLS">SKILLS</a>
-            </li>
-            <li class="link">
-              <a class="link__titulo" href="#page-HOBBIES">HOBBIES</a>
-            </li>
-            <li class="link">
-              <a class="link__titulo" href="#page-TRAINING">TRAINING</a>
-            </li>
-            <li class="link">
-              <a class="link__titulo" href="#page-PROJECTS">PROJECTS</a>
-            </li>
-            <li class="link">
-              <a class="link__titulo" href="#page-CONTACT">CONTACT</a>
-            </li>
-          </ul>
-        </nav>
+          <nav class="main__nav">
+
+            <div id="toggle__menu" class="toggle__menu">
+              <img src="/assets/menu_561184.png" alt="Menu">
+            </div>
+
+            <ul class="main__menu" id="main__menu">
+              <li class="main__menu__iten">
+                <a class="main__menu__link" href="#page-ABOUT ME">ABOUT ME</a>
+              </li>
+              <li class="main__menu__iten">
+                <a class="main__menu__link" href="#page-SKILLS">SKILLS</a>
+              </li>
+              <li class="main__menu__iten">
+                <a class="main__menu__link" href="#page-HOBBIES">HOBBIES</a>
+              </li>
+              <li class="main__menu__iten">
+                <a class="main__menu__link" href="#page-TRAINING">TRAINING</a>
+              </li>
+              <li class="main__menu__iten">
+                <a class="main__menu__link" href="#page-PROJECTS">PROJECTS</a>
+              </li>
+              <li class="main__menu__iten">
+                <a class="main__menu__link" href="#page-CONTACT">CONTACT</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
       </div>
     </header>
 
     <section>
-      <div class="background__container"></div>
-    </section>
-
-    <section>
-      <div class="about__container" id="page-ABOUT ME">
-        <h1 class="titulos">ABOUT ME</h1>
+      <div class="about__container">
         <div class="about__content">
-          <div>
-            <p>
+          <div id="page-ABOUT ME" class="texto__about">
+            <p> About Me
               I am currently 24 years old and I am studying information systems
               engineering at UNA. I also like to take online courses to
               strengthen my learning to acquire new knowledge and perform my
@@ -389,7 +398,11 @@
             />
           </div>
           <div>
-            <form action="https://formsubmit.co/el/wagizey" method="POST">
+            <form
+              class="formulario"
+              action="https://formsubmit.co/kenneth2741999@gmail.com"
+              method="POST"
+            >
               <label for="name">Name</label>
               <input
                 type="text"
@@ -419,11 +432,11 @@
               ></textarea>
               <input type="submit" value="Send Message" />
 
-              <input
+              <!--               <input
                 type="hidden"
                 name="_next"
                 value="https://yourdomain.co/thanks.html"
-              />
+              /> -->
             </form>
           </div>
         </div>
@@ -483,6 +496,6 @@
       </footer>
     </section>
 
-    <script src="animaciones.js"></script>
+    <script src="/script.js"></script>
   </body>
 </html>
