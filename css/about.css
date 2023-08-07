@@ -2,7 +2,7 @@
 
 .about__container {
   background-size: 100%;
-  background-image: url(/assets/UNA-Liberia-Guanacaste.jpg);
+  background-image: url(../assets/UNA-Liberia-Guanacaste.jpg);
 }
 .about__content {
   display: flex;
