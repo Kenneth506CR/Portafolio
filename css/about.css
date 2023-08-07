@@ -1,79 +1,78 @@
 /* About */
 
 .about__container {
-    background-size: 100%;
-    background-image: url(/assets/UNA-Liberia-Guanacaste.jpg);
+  background-size: 100%;
+  background-image: url(assets/UNA-Liberia-Guanacaste.jpg);
+}
+.about__content {
+  display: flex;
+  justify-content: space-around;
+  align-items: start;
+  padding-bottom: 4rem;
+  flex-wrap: wrap-reverse;
+  padding-top: 2rem;
+}
+
+.about__content h1 {
+  font-size: 1.3rem;
+  font-weight: bolder;
+  font-style: italic;
+}
+
+.about__content p {
+  font-size: 1.6rem;
+  text-align: center;
+  white-space: pre-line;
+  background: rgb(255, 255, 255);
+  opacity: 0.9;
+  color: rgb(0, 0, 0);
+  border-radius: 2rem;
+  border: rgb(255, 255, 255) 30px solid;
+  font-style: italic;
+}
+
+.about__content p:hover {
+  scale: 1.1;
+  transition: all 0.5s;
+  box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.705);
+}
+
+.about__content img {
+  width: 25rem;
+  border-radius: 50%;
+  box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.705);
+  opacity: 0.9;
+}
+
+.about__content img:hover {
+  scale: 1.1;
+  transition: all 0.5s;
+  opacity: 1;
+}
+
+@media screen and (max-width: 768px) {
+  .about__container {
+    background-size: auto 210vh;
+    background-repeat: no-repeat;
+    background-position: center;
   }
+
   .about__content {
-    display: flex;
-    justify-content: space-around;
-    align-items: start;
-    padding-bottom: 4rem;
-    flex-wrap: wrap-reverse;
-    padding-top: 2rem;
+    gap: 20px;
   }
 
-  .about__content h1{
-    font-size: 1.3rem;
-    font-weight: bolder;
-    font-style: italic;
-  }
-  
-  .about__content p {
-    font-size: 1.6rem;
-    text-align: center;
-    white-space: pre-line;
-    background: rgb(255, 255, 255);
-    opacity: 0.9;
-    color: rgb(0, 0, 0);
-    border-radius: 2rem;
-    border: rgb(255, 255, 255) 30px solid;
-    font-style: italic;
-  }
-  
-  .about__content p:hover {
-    scale: 1.1;
-    transition: all 0.5s;
-    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.705);
-  }
-  
   .about__content img {
-    width: 25rem;
-    border-radius: 50%;
-    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.705);
-    opacity: 0.9;
-  }
-  
-  .about__content img:hover {
-    scale: 1.1;
-    transition: all 0.5s;
-    opacity: 1;
+    width: 225px;
   }
 
-  @media screen and (max-width: 768px) {
-
-    .about__container {
-      background-size: auto 210vh;
-      background-repeat: no-repeat;
-      background-position: center;
-    }
-
-    .about__content{
-      gap: 20px;
-    }
-
-    .about__content img {
-      width:225px;
-    }
-
-    .texto__about {
-      width: 375px;
-      height: 460px;
-    }
-
-    .about__content p {
-      font-size: 1rem;
-      text-align: center;
-      border-radius: 1rem;
-    }
+  .texto__about {
+    width: 375px;
+    height: 460px;
   }
+
+  .about__content p {
+    font-size: 1rem;
+    text-align: center;
+    border-radius: 1rem;
+  }
+}
