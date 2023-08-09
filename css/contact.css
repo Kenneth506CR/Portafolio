@@ -73,6 +73,21 @@
   height: auto;
 }
 
+.success__alert,
+.loading-message {
+  font-weight: bold;
+  font-size: 1.5rem;
+  background-color: #45a049;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  border-radius: 5px;
+  margin-top: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: none; /* Ocultar por defecto */
+}
+
+
   @media screen and (max-width:768px) {
     .form__container img{
       width: auto;
@@ -89,14 +104,3 @@
     }
   }
 
-  .success__alert {
-    display: none;
-    background-color: #4caf50;
-    color: white;
-    text-align: center;
-    padding: 10px;
-    border-radius: 5px;
-    margin-top: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
-  
