@@ -52,7 +52,7 @@
 
 @media screen and (max-width: 768px) {
   .about__container {
-    background-size: auto 210vh;
+    background-size: auto 120vh;
     background-repeat: no-repeat;
     background-position: center;
   }

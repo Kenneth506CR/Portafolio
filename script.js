@@ -24,6 +24,7 @@ form.addEventListener("submit", async (event) => {
     submitButton.disabled = true;
   }
 
+  //Error en netlify
   try {
     await fetch(form.action, {
       method: form.method,
@@ -44,6 +45,7 @@ form.addEventListener("submit", async (event) => {
     setTimeout(() => {
       if (successAlert) {
         successAlert.style.display = "none";
+        console.log("Mensaje enviado");
       }
     }, 5000);
   } catch (error) {
