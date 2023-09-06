@@ -1,4 +1,4 @@
-// Barra del menú de movil
+// Barra del menú de móvil
 const toggleMenuElement = document.getElementById("toggle__menu");
 const mainMenuElement = document.getElementById("main__menu");
 
@@ -24,8 +24,11 @@ form.addEventListener("submit", async (event) => {
     submitButton.disabled = true;
   }
 
-  //Error en netlify
+  // Error en netlify
   try {
+    console.log("Enviando solicitud a:", form.action);
+    console.log("Método HTTP:", form.method);
+
     await fetch(form.action, {
       method: form.method,
       body: new FormData(form),
