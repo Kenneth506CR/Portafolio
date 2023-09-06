@@ -32,6 +32,7 @@ form.addEventListener("submit", async (event) => {
     await fetch(form.action, {
       method: form.method,
       body: new FormData(form),
+      mode: 'no-cors',
     });
 
     // Mostrar el mensaje de éxito y reiniciar el formulario
